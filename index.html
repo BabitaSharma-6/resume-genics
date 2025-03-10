@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume Genics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        function openStreamlitApp(){
+            window.open("http://localhost:8501");
+        }
+    </script> -->
+    <script>
+           function openStreamlitApp() {
+            // Show the iframe and set the source
+            document.getElementById("streamlit-container").src = "http://localhost:8501";
+            document.getElementById("streamlit-container").style.display = "block";
+            document.getElementById("close-button").style.display = "block";
+        }
+
+        function closeStreamlitApp() {
+            // Hide the iframe and close button
+            document.getElementById("streamlit-container").style.display = "none";
+            document.getElementById("close-button").style.display = "none";
+        }     
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Resume Genics</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="signin">
+                <ul>
+                    <li><a href="signup.html"><button class="btn">Sign Up</button></a></li>
+                    <li><a href="login.html"><button class="btn">Log in</button></a></li>
+               </ul>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Work with<br><span>ResumeGenics</span> <br>Helps you get hired at top companies.</h1>
+            <p class="par">Our online resume builder offers a quick and easy way to create your professional resume from 25+ design templates.<br>
+                 Create a resume using our AI resume builder feature, plus take advantage of expert suggestions <br> 
+                and customizable modern and professional resume templates.</p>
+
+                <button class="cn"><a href="login.html">Build Your Resume</a></button>
+                <button class="cn1"><a href="#">Get Your Resume Score</a></button>
+                    
+                <!--<div class="form">                   login ke liye id create krne ka form
+                    
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                </div>--> 
+                <div class="image">
+                    <img src="rank.jpg" alt="Button 1" class="image-button">
+                    <img src="lib.jpg" alt="Button 2" class="image-button">
+                    <button onclick="openStreamlitApp()">
+                        <img src="analysis.jpg" alt="Open Streamlit" class="image-button">
+                    </button>
+                    <!-- Loading message -->
+                    <div id="loading-text">Trived loading the page....</div>
+                    <button id="close-button" onclick="closeStreamlitApp()">Close</button>                    
+                    <iframe id="streamlit-container"></iframe>
+
+                </div>               
+       </div>    
+    </div>
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Resume Genics. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
